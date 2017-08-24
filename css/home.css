@@ -1,0 +1,416 @@
+@charset "UTF-8";
+#banner, #main, #bottom, footer {
+  width: 1190px;
+  margin: 0 auto; }
+
+/*--link导航下尖角样式--*/
+/*--遮罩层--*/
+/*-------------banner--------------*/
+.banner-wrap {
+  width: 100%;
+  margin: 0 auto;
+  background: url(../images/blue-bg.jpg) no-repeat center top; }
+
+#banner {
+  height: 471px;
+  background: url(../images/blue-img.jpg) no-repeat center top;
+  position: relative; }
+
+#banner > ul {
+  width: 200px;
+  color: #fff;
+  float: left; }
+  #banner > ul > li {
+    background: #333;
+    line-height: 45px;
+    padding-left: 20px;
+    border-bottom: 1px solid #515151; }
+    #banner > ul > li:hover {
+      background: #d90048; }
+    #banner > ul > li:hover ul, #banner > ul > li:hover p {
+      display: block; }
+    #banner > ul > li > span {
+      font-size: 18px;
+      font-family: iconfont; }
+    #banner > ul > li > a {
+      color: #fff; }
+      #banner > ul > li > a:nth-of-type(1) {
+        font-size: 14px;
+        padding-right: 8px;
+        border-right: 1px solid #999; }
+      #banner > ul > li > a:nth-of-type(2) {
+        padding-left: 8px; }
+        #banner > ul > li > a:nth-of-type(2):hover {
+          text-decoration: underline; }
+    #banner > ul > li > b {
+      float: right;
+      margin: 20px 10px 0 0;
+      border-left: 5px solid #fff;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent; }
+    #banner > ul > li > ul {
+      display: none;
+      width: 305px;
+      background: rgba(51, 51, 51, 0.95);
+      position: absolute;
+      padding: 0 15px;
+      top: 0;
+      left: 200px; }
+      #banner > ul > li > ul li {
+        height: 54px;
+        line-height: 24px;
+        border-bottom: 1px dashed #515151; }
+        #banner > ul > li > ul li a {
+          color: #fff;
+          padding: 0 6px; }
+          #banner > ul > li > ul li a:hover {
+            color: #d90048; }
+    #banner > ul > li > p {
+      z-index: 1;
+      display: none;
+      position: absolute;
+      left: 535px;
+      top: 0;
+      width: 165px;
+      padding: 0 10px;
+      height: 385px;
+      background: rgba(0, 0, 0, 0.9);
+      line-height: 26px; }
+      #banner > ul > li > p span {
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        display: block;
+        border-bottom: 1px solid #515151; }
+      #banner > ul > li > p a {
+        float: left;
+        padding: 0 10px;
+        color: #fff; }
+        #banner > ul > li > p a:hover {
+          color: #d90048; }
+    #banner > ul > li:nth-of-type(2) ul, #banner > ul > li:nth-of-type(2) p {
+      top: 46px; }
+    #banner > ul > li:nth-of-type(4) ul, #banner > ul > li:nth-of-type(4) p {
+      top: 46px; }
+    #banner > ul > li:nth-of-type(10) ul, #banner > ul > li:nth-of-type(10) p {
+      top: 85px; }
+
+#banner > #navList {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -85px; }
+  #banner > #navList span {
+    float: left;
+    width: 30px;
+    height: 8px;
+    margin: 2px;
+    background: #211616; }
+    #banner > #navList span:hover {
+      background: #d90048;
+      transition: 0.3s; }
+
+#banner > img {
+  float: right; }
+  #banner > img:hover {
+    transform: translate(-4px);
+    transition: 0.5s; }
+
+/*-------------main--------------*/
+/*--标题部分--*/
+.m-tit {
+  display: block;
+  height: 60px;
+  font-family: "宋体";
+  width: 380px; }
+  .m-tit h6 {
+    float: left;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333; }
+    .m-tit h6 b {
+      color: #e50150; }
+  .m-tit span {
+    float: left;
+    padding-left: 10px;
+    height: 36px;
+    font-size: 18px;
+    margin: 11px;
+    line-height: 18px;
+    color: #888;
+    width: 100px;
+    border-left: 1px solid #ccc; }
+
+#main {
+  min-height: 800px;
+  height: auto !important;
+  height: 800px;
+  background: #fff;
+  overflow: hidden; }
+  #main .main-part1 {
+    clear: both;
+    margin-top: 28px;
+    height: 328px; }
+  #main .special {
+    height: 638px; }
+
+#main > a {
+  display: block;
+  margin: 30px 0 24px 0; }
+
+#main > div {
+  height: 432px;
+  background: #FFFBAE;
+  margin-bottom: 20px; }
+
+/*--彩妆专场--*/
+#main .main-part1 {
+  position: relative; }
+
+#main .main-part1 > div {
+  width: 915px;
+  height: 328px; }
+
+#main .main-part1 > div > p {
+  position: absolute;
+  top: 0;
+  width: 909px;
+  line-height: 50px;
+  font-size: 16px; }
+  #main .main-part1 > div > p span {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 303px;
+    border-bottom: 5px solid #333; }
+    #main .main-part1 > div > p span:last-child {
+      font-weight: bold;
+      border-color: #d90048; }
+      #main .main-part1 > div > p span:last-child > b {
+        display: block; }
+    #main .main-part1 > div > p span b {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -4px;
+      border-bottom: 7px solid #d90048;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent; }
+
+#main .main-part1 > div > ul {
+  position: absolute;
+  top: 65px; }
+  #main .main-part1 > div > ul li {
+    background: #fff;
+    width: 220px;
+    height: 260px;
+    float: left;
+    margin-right: 7px;
+    border: 1px solid #eee; }
+    #main .main-part1 > div > ul li:last-child {
+      margin-right: 0; }
+    #main .main-part1 > div > ul li img {
+      text-align: center; }
+
+#main .main-part1 > a {
+  position: absolute;
+  width: 270px;
+  height: 300px;
+  top: 25px;
+  right: 0; }
+  #main .main-part1 > a div {
+    top: 0;
+    width: 270px;
+    height: 300px;
+    position: absolute;
+    display: none;
+    background: rgba(255, 255, 255, 0.2); }
+  #main .main-part1 > a:hover div {
+    display: block; }
+
+/*--商场同款--*/
+#main .special > div {
+  width: 1188px;
+  height: 575px;
+  border: 1px solid #eee;
+  margin-top: 0;
+  position: relative; }
+  #main .special > div > a {
+    position: absolute;
+    float: left;
+    top: 10px;
+    left: 10px; }
+    #main .special > div > a > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background: rgba(255, 255, 255, 0); }
+      #main .special > div > a > div:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transition: 0.3s; }
+
+#main .special > div > .slide-box {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 360px;
+  width: 830px;
+  height: 571px; }
+  #main .special > div > .slide-box > p {
+    height: 45px;
+    font-size: 16px;
+    border-bottom: 3px solid #333; }
+    #main .special > div > .slide-box > p > span {
+      position: relative;
+      float: left;
+      text-align: center;
+      width: 100px;
+      line-height: 45px;
+      box-sizing: border-box;
+      border-bottom: 3px solid #333; }
+      #main .special > div > .slide-box > p > span:first-child {
+        font-weight: bold;
+        border-color: #d90048; }
+        #main .special > div > .slide-box > p > span:first-child > b {
+          display: block; }
+      #main .special > div > .slide-box > p > span > b {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: 0px;
+        border-bottom: 5px solid #d90048;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent; }
+  #main .special > div > .slide-box > ul {
+    background: #fff;
+    margin-top: 5px;
+    position: absolute;
+    top: 46px;
+    width: 826px;
+    height: 524px; }
+    #main .special > div > .slide-box > ul li {
+      float: left;
+      margin: 5px 2px; }
+      #main .special > div > .slide-box > ul li > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative; }
+        #main .special > div > .slide-box > ul li > a div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          background: rgba(255, 255, 255, 0); }
+          #main .special > div > .slide-box > ul li > a div:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transition: 0.3s; }
+    #main .special > div > .slide-box > ul:nth-of-type(1) {
+      z-index: 5; }
+  #main .special > div > .slide-box > .m2-list2 li {
+    width: 180px;
+    height: 225px;
+    border: 1px solid #eee;
+    margin: 15px 11px; }
+
+/*--时尚名品~可爱婴童--*/
+#main .m-content {
+  margin: 0;
+  width: 1188px;
+  height: 378px;
+  background: pink; }
+
+#main .m-content div:nth-of-type(1) {
+  width: 228px;
+  height: 370px;
+  border: 1px solid #eee;
+  float: left;
+  margin: 3px; }
+  #main .m-content div:nth-of-type(1) > p > a {
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    margin: 4px;
+    width: 65px;
+    height: 30px;
+    border: 1px solid #eee;
+    background: #fff; }
+    #main .m-content div:nth-of-type(1) > p > a:hover {
+      background: #d90048;
+      color: #fff; }
+  #main .m-content div:nth-of-type(1) > .smooth {
+    width: 200px;
+    height: 145px;
+    background: #f2f2f2;
+    margin: 20px 10px;
+    position: relative;
+    border-top: 1px dashed #969696; }
+    #main .m-content div:nth-of-type(1) > .smooth > span {
+      position: absolute;
+      display: block;
+      top: 50%; }
+      #main .m-content div:nth-of-type(1) > .smooth > span:hover {
+        cursor: pointer; }
+      #main .m-content div:nth-of-type(1) > .smooth > span:nth-of-type(1) {
+        left: 5px;
+        border-right: 5px solid #888;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent; }
+      #main .m-content div:nth-of-type(1) > .smooth > span:nth-of-type(2) {
+        right: 5px;
+        border-left: 5px solid #888;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent; }
+    #main .m-content div:nth-of-type(1) > .smooth > div {
+      position: absolute;
+      top: 15px;
+      left: 11px;
+      width: 170px;
+      height: 114px;
+      overflow: hidden; }
+      #main .m-content div:nth-of-type(1) > .smooth > div > ul {
+        width: 520px; }
+        #main .m-content div:nth-of-type(1) > .smooth > div > ul > li {
+          width: 80px;
+          height: 50px;
+          margin: 2px;
+          float: left; }
+          #main .m-content div:nth-of-type(1) > .smooth > div > ul > li > a {
+            float: left; }
+            #main .m-content div:nth-of-type(1) > .smooth > div > ul > li > a img {
+              width: 80px;
+              height: 50px; }
+
+#main .m-content div:nth-of-type(2) {
+  width: 390px;
+  height: 370px;
+  border: 1px solid #eee;
+  float: left;
+  margin: 3px; }
+
+#main .m-content div:nth-of-type(3) {
+  width: 540px;
+  height: 370px;
+  border: 1px solid #eee;
+  float: left;
+  margin: 3px 0 0 3px; }
+
+/*-------------bottom--------------*/
+#bottom {
+  height: 90px;
+  background: #f7f7f7; }
+
+/*-------------footer--------------*/
+footer {
+  height: 200px;
+  background: #fff; }
+
+/*# sourceMappingURL=home.css.map */
