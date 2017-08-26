@@ -1,0 +1,109 @@
+#register{
+  position:relative;
+  &>h6{
+    height:37px;
+    border-bottom:3px solid #e5004f;
+    text-align:center;
+    line-height:37px;
+    background:#fff;
+    font-size:16px;
+  }
+  &>span{
+    float:right;
+    &>a{
+      color:red;
+      line-height:36px;
+      font-size:14px;
+      margin-right:20px;
+    }
+  }
+  &>div{
+    height:43px;
+    border-bottom:1px solid #d2d2d2;
+    &:nth-of-type(1){
+      border-top:1px solid #d2d2d2;
+      margin-top:36px;
+    }
+    &>input{
+      border:0;
+      width:360px;
+      line-height:40px;
+      padding-left:20px;
+    }
+    &:nth-of-type(2){
+      input:nth-of-type(1){
+        width:230px;
+        float:left;
+      }
+      input:nth-of-type(2){
+        width:100px;
+        height:30px;
+        padding:0;
+        line-height:30px;
+        float:left;
+        background:#fff;
+        border:1px solid #999999;
+        color:#999999;
+        border-radius: 5px;
+        margin-top:7px;
+      }
+    }
+  }
+  &>p{
+    margin:15px 10px;
+    color:#666666;
+  }
+  &>a{
+    width:308px;
+    height:35px;
+    display:block;
+    background:#ccc;
+    border-radius:5px;
+    color:#fff;
+    margin:0 auto;
+    font-size:14px;
+    line-height:35px;
+    text-align:center;
+  }
+  #popbox{
+    display:none;
+    width:390px;
+    height:460px;
+    position:absolute;
+    top:0;
+    left:0;
+    border:0;
+    background:rgba(0,0,0,0.4);
+    .pop{
+      position:absolute;
+      top:0;
+      left:0;
+      bottom:0;
+      right:0;
+      margin:auto;
+      background:#fff;
+      width:308px;
+      height:116px;
+      background:#fff;
+      border-radius:5px;
+      p:nth-of-type(1){
+        line-height:50px;
+        font-size:18px;
+        text-align:center;
+      }
+      #pop-content{
+        color:#666666;
+        font-size:14px;
+        text-align:center;
+      }
+      #pop-btn{
+        display:block;
+        line-height:36px;
+        text-align:center;
+        color:#ff3b7f;
+        border-top:1px solid #e6e6e6;
+        margin-top:12px;
+      }
+    }
+  }
+}

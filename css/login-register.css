@@ -1,0 +1,61 @@
+#login-top, #login-content {
+  width: 1190px;
+  margin: 0 auto; }
+
+/*--login-top--*/
+#login-top {
+  height: 115px;
+  background: #fff; }
+  #login-top .logo {
+    width: 520px;
+    padding-top: 30px;
+    height: 85px; }
+    #login-top .logo h1 {
+      float: left;
+      width: 224px; }
+    #login-top .logo span {
+      float: left;
+      margin-top: 50px;
+      color: #e5004f;
+      font-size: 20px; }
+  #login-top > div {
+    float: left;
+    width: 210px;
+    padding-top: 50px; }
+    #login-top > div > div {
+      float: left; }
+      #login-top > div > div > b {
+        font-family: iconfont;
+        margin-right: 5px;
+        font-size: 36px;
+        color: #444; }
+      #login-top > div > div:nth-of-type(2) {
+        margin-left: 5px; }
+        #login-top > div > div:nth-of-type(2) p:nth-of-type(1) {
+          line-height: 28px;
+          font-size: 16px; }
+          #login-top > div > div:nth-of-type(2) p:nth-of-type(1) span {
+            color: #e5004f; }
+        #login-top > div > div:nth-of-type(2) p:nth-of-type(2) {
+          font-size: 14px;
+          color: #888; }
+
+/*--login-top--*/
+.login-content-wrap {
+  width: 100%;
+  background: #f9f9f9; }
+
+#login-content {
+  padding-top: 60px;
+  height: 510px; }
+  #login-content > div {
+    float: left; }
+  #login-content .login-register {
+    background: #f3f3f3;
+    width: 390px;
+    height: 460px;
+    float: right; }
+    #login-content .login-register div {
+      background: #fff; }
+
+/*# sourceMappingURL=login-register.css.map */

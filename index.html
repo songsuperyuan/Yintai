@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
     <link href="css/common.css" rel="stylesheet" type="text/css"/>
     <link href="css/home.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
-
 </head>
 <body>
 <!--top-->
@@ -81,13 +80,26 @@
 <!--banner-->
 <div class="banner-wrap">
     <div id="banner">
-        <ul>
+        <!--<ul>
+        <script id="nav-first" type="text/html">
             <li>
                 <span>&#xe600;</span>
                 <a href="#">名品</a>
                 <a href="#">秋冬新品</a>
                 <b></b>
-                <ul>
+                <ul class="nav-first navSlide">
+                        {{each firstNav as first1}}
+                        	<li>
+                        		<p><a href="#">first1.subNavTit</a></p>
+                        		<p>
+	                        		{{each first1.subNavList as first2}}
+	                        			<a href="{{first2.link}}">{{first2.title}}</a>
+	                        		{{/each}}
+                        		</p>
+                        	</li>
+						{{/each}}
+                </ul>
+                &lt;!&ndash;<ul>
                     <li>
                         <p><a href="#">男装</a></p>
                         <p>
@@ -153,8 +165,8 @@
                             <a href="#">童装配饰</a>
                         </p>
                     </li>
-                </ul>
-                <p>
+                </ul>&ndash;&gt;
+                &lt;!&ndash;<p>
                     <span>品牌</span>
                     <a href="#">BURBERRY</a>
                     <a href="#">FERRAGAMD</a>
@@ -175,864 +187,100 @@
                     <a href="#">EMPORIO ARMANI</a>
                     <a href="#">BALLY</a>
                     <a href="#">ALEXANDER MCQUEEN</a>
-                </p>
+                </p>&ndash;&gt;
             </li>
             <li>
                 <span>&#xe63c;</span>
                 <a href="#">女装</a>
                 <a href="#">秋装上新</a>
                 <b></b>
-                <ul>
-                    <li>
-                        <p><a href="#">男装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">POLO衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">衬衫</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">衬衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">裙装</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">鞋靴</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">女士鞋靴</a>
-                            <a href="#">男鞋</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">手提挎包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">钱夹</a>
-                            <a href="#">手拿包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">男包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">钱包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">手拿包</a>
-                            <a href="#">手提包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">配饰</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">围巾</a>
-                            <a href="#">帽子</a>
-                            <a href="#">腰带</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">童婴</a></p>
-                        <p>
-                            <a href="#">童装</a>
-                            <a href="#">童鞋</a>
-                            <a href="#">童装配饰</a>
-                        </p>
-                    </li>
-                </ul>
-                <p>
-                    <span>品牌</span>
-                    <a href="#">BURBERRY</a>
-                    <a href="#">FERRAGAMD</a>
-                    <a href="#">GUCCI</a>
-                    <a href="#">COACH</a>
-                    <a href="#">ARMANI</a>
-                    <a href="#">JEANS</a>
-                    <a href="#">DIESEL</a>
-                    <a href="#">VERSACE</a>
-                    <a href="#">MAC&CO</a>
-                    <a href="#">FRED PERTY</a>
-                    <a href="#">CELINE</a>
-                    <a href="#">SPORTMAX</a>
-                    <a href="#">MAX XARA</a>
-                    <a href="#">MICHAEL KORS</a>
-                    <a href="#">ZEGNA</a>
-                    <a href="#">FENDI</a>
-                    <a href="#">EMPORIO ARMANI</a>
-                    <a href="#">BALLY</a>
-                    <a href="#">ALEXANDER MCQUEEN</a>
-                </p>
             </li>
             <li>
                 <span>&#xe646;</span>
                 <a href="#">男装</a>
                 <a href="#">型男专场</a>
                 <b></b>
-                <ul>
-                    <li>
-                        <p><a href="#">男装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">POLO衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">衬衫</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">衬衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">裙装</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">鞋靴</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">女士鞋靴</a>
-                            <a href="#">男鞋</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">手提挎包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">钱夹</a>
-                            <a href="#">手拿包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">男包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">钱包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">手拿包</a>
-                            <a href="#">手提包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">配饰</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">围巾</a>
-                            <a href="#">帽子</a>
-                            <a href="#">腰带</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">童婴</a></p>
-                        <p>
-                            <a href="#">童装</a>
-                            <a href="#">童鞋</a>
-                            <a href="#">童装配饰</a>
-                        </p>
-                    </li>
-                </ul>
-                <p>
-                    <span>品牌</span>
-                    <a href="#">BURBERRY</a>
-                    <a href="#">FERRAGAMD</a>
-                    <a href="#">GUCCI</a>
-                    <a href="#">COACH</a>
-                    <a href="#">ARMANI</a>
-                    <a href="#">JEANS</a>
-                    <a href="#">DIESEL</a>
-                    <a href="#">VERSACE</a>
-                    <a href="#">MAC&CO</a>
-                    <a href="#">FRED PERTY</a>
-                    <a href="#">CELINE</a>
-                    <a href="#">SPORTMAX</a>
-                    <a href="#">MAX XARA</a>
-                    <a href="#">MICHAEL KORS</a>
-                    <a href="#">ZEGNA</a>
-                    <a href="#">FENDI</a>
-                    <a href="#">EMPORIO ARMANI</a>
-                    <a href="#">BALLY</a>
-                    <a href="#">ALEXANDER MCQUEEN</a>
-                </p>
             </li>
             <li>
                 <span>&#xe658;</span>
                 <a href="#">鞋靴</a>
                 <a href="#">时尚鞋品</a>
                 <b></b>
-                <ul>
-                    <li>
-                        <p><a href="#">男装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">POLO衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">衬衫</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">衬衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">裙装</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">鞋靴</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">女士鞋靴</a>
-                            <a href="#">男鞋</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">手提挎包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">钱夹</a>
-                            <a href="#">手拿包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">男包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">钱包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">手拿包</a>
-                            <a href="#">手提包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">配饰</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">围巾</a>
-                            <a href="#">帽子</a>
-                            <a href="#">腰带</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">童婴</a></p>
-                        <p>
-                            <a href="#">童装</a>
-                            <a href="#">童鞋</a>
-                            <a href="#">童装配饰</a>
-                        </p>
-                    </li>
-                </ul>
-                <p>
-                    <span>品牌</span>
-                    <a href="#">BURBERRY</a>
-                    <a href="#">FERRAGAMD</a>
-                    <a href="#">GUCCI</a>
-                    <a href="#">COACH</a>
-                    <a href="#">ARMANI</a>
-                    <a href="#">JEANS</a>
-                    <a href="#">DIESEL</a>
-                    <a href="#">VERSACE</a>
-                    <a href="#">MAC&CO</a>
-                    <a href="#">FRED PERTY</a>
-                    <a href="#">CELINE</a>
-                    <a href="#">SPORTMAX</a>
-                    <a href="#">MAX XARA</a>
-                    <a href="#">MICHAEL KORS</a>
-                    <a href="#">ZEGNA</a>
-                    <a href="#">FENDI</a>
-                    <a href="#">EMPORIO ARMANI</a>
-                    <a href="#">BALLY</a>
-                    <a href="#">ALEXANDER MCQUEEN</a>
-                </p>
             </li>
             <li>
                 <span>&#xe917;</span>
                 <a href="#">美妆</a>
                 <a href="#">隔离防晒</a>
                 <b></b>
-                <ul>
-                    <li>
-                        <p><a href="#">男装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">POLO衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">衬衫</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">衬衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">裙装</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">鞋靴</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">女士鞋靴</a>
-                            <a href="#">男鞋</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">手提挎包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">钱夹</a>
-                            <a href="#">手拿包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">男包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">钱包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">手拿包</a>
-                            <a href="#">手提包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">配饰</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">围巾</a>
-                            <a href="#">帽子</a>
-                            <a href="#">腰带</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">童婴</a></p>
-                        <p>
-                            <a href="#">童装</a>
-                            <a href="#">童鞋</a>
-                            <a href="#">童装配饰</a>
-                        </p>
-                    </li>
-                </ul>
-                <p>
-                    <span>品牌</span>
-                    <a href="#">BURBERRY</a>
-                    <a href="#">FERRAGAMD</a>
-                    <a href="#">GUCCI</a>
-                    <a href="#">COACH</a>
-                    <a href="#">ARMANI</a>
-                    <a href="#">JEANS</a>
-                    <a href="#">DIESEL</a>
-                    <a href="#">VERSACE</a>
-                    <a href="#">MAC&CO</a>
-                    <a href="#">FRED PERTY</a>
-                    <a href="#">CELINE</a>
-                    <a href="#">SPORTMAX</a>
-                    <a href="#">MAX XARA</a>
-                    <a href="#">MICHAEL KORS</a>
-                    <a href="#">ZEGNA</a>
-                    <a href="#">FENDI</a>
-                    <a href="#">EMPORIO ARMANI</a>
-                    <a href="#">BALLY</a>
-                    <a href="#">ALEXANDER MCQUEEN</a>
-                </p>
             </li>
             <li>
                 <span>&#xe617;</span>
                 <a href="#">箱包</a>
                 <a href="#">女神单肩</a>
                 <b></b>
-                <ul>
-                    <li>
-                        <p><a href="#">男装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">POLO衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">衬衫</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">衬衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">裙装</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">鞋靴</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">女士鞋靴</a>
-                            <a href="#">男鞋</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">手提挎包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">钱夹</a>
-                            <a href="#">手拿包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">男包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">钱包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">手拿包</a>
-                            <a href="#">手提包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">配饰</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">围巾</a>
-                            <a href="#">帽子</a>
-                            <a href="#">腰带</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">童婴</a></p>
-                        <p>
-                            <a href="#">童装</a>
-                            <a href="#">童鞋</a>
-                            <a href="#">童装配饰</a>
-                        </p>
-                    </li>
-                </ul>
-                <p>
-                    <span>品牌</span>
-                    <a href="#">BURBERRY</a>
-                    <a href="#">FERRAGAMD</a>
-                    <a href="#">GUCCI</a>
-                    <a href="#">COACH</a>
-                    <a href="#">ARMANI</a>
-                    <a href="#">JEANS</a>
-                    <a href="#">DIESEL</a>
-                    <a href="#">VERSACE</a>
-                    <a href="#">MAC&CO</a>
-                    <a href="#">FRED PERTY</a>
-                    <a href="#">CELINE</a>
-                    <a href="#">SPORTMAX</a>
-                    <a href="#">MAX XARA</a>
-                    <a href="#">MICHAEL KORS</a>
-                    <a href="#">ZEGNA</a>
-                    <a href="#">FENDI</a>
-                    <a href="#">EMPORIO ARMANI</a>
-                    <a href="#">BALLY</a>
-                    <a href="#">ALEXANDER MCQUEEN</a>
-                </p>
             </li>
             <li>
                 <span>&#xe612;</span>
                 <a href="#">运动</a>
                 <a href="#">运动鞋服</a>
                 <b></b>
-                <ul>
-                    <li>
-                        <p><a href="#">男装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">POLO衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">衬衫</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">衬衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">裙装</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">鞋靴</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">女士鞋靴</a>
-                            <a href="#">男鞋</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">手提挎包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">钱夹</a>
-                            <a href="#">手拿包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">男包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">钱包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">手拿包</a>
-                            <a href="#">手提包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">配饰</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">围巾</a>
-                            <a href="#">帽子</a>
-                            <a href="#">腰带</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">童婴</a></p>
-                        <p>
-                            <a href="#">童装</a>
-                            <a href="#">童鞋</a>
-                            <a href="#">童装配饰</a>
-                        </p>
-                    </li>
-                </ul>
-                <p>
-                    <span>品牌</span>
-                    <a href="#">BURBERRY</a>
-                    <a href="#">FERRAGAMD</a>
-                    <a href="#">GUCCI</a>
-                    <a href="#">COACH</a>
-                    <a href="#">ARMANI</a>
-                    <a href="#">JEANS</a>
-                    <a href="#">DIESEL</a>
-                    <a href="#">VERSACE</a>
-                    <a href="#">MAC&CO</a>
-                    <a href="#">FRED PERTY</a>
-                    <a href="#">CELINE</a>
-                    <a href="#">SPORTMAX</a>
-                    <a href="#">MAX XARA</a>
-                    <a href="#">MICHAEL KORS</a>
-                    <a href="#">ZEGNA</a>
-                    <a href="#">FENDI</a>
-                    <a href="#">EMPORIO ARMANI</a>
-                    <a href="#">BALLY</a>
-                    <a href="#">ALEXANDER MCQUEEN</a>
-                </p>
             </li>
             <li>
                 <span>&#xe608;</span>
                 <a href="#">配饰</a>
                 <a href="#">黄金饰品</a>
                 <b></b>
-                <ul>
-                    <li>
-                        <p><a href="#">男装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">POLO衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">衬衫</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">衬衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">裙装</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">鞋靴</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">女士鞋靴</a>
-                            <a href="#">男鞋</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">手提挎包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">钱夹</a>
-                            <a href="#">手拿包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">男包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">钱包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">手拿包</a>
-                            <a href="#">手提包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">配饰</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">围巾</a>
-                            <a href="#">帽子</a>
-                            <a href="#">腰带</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">童婴</a></p>
-                        <p>
-                            <a href="#">童装</a>
-                            <a href="#">童鞋</a>
-                            <a href="#">童装配饰</a>
-                        </p>
-                    </li>
-                </ul>
-                <p>
-                    <span>品牌</span>
-                    <a href="#">BURBERRY</a>
-                    <a href="#">FERRAGAMD</a>
-                    <a href="#">GUCCI</a>
-                    <a href="#">COACH</a>
-                    <a href="#">ARMANI</a>
-                    <a href="#">JEANS</a>
-                    <a href="#">DIESEL</a>
-                    <a href="#">VERSACE</a>
-                    <a href="#">MAC&CO</a>
-                    <a href="#">FRED PERTY</a>
-                    <a href="#">CELINE</a>
-                    <a href="#">SPORTMAX</a>
-                    <a href="#">MAX XARA</a>
-                    <a href="#">MICHAEL KORS</a>
-                    <a href="#">ZEGNA</a>
-                    <a href="#">FENDI</a>
-                    <a href="#">EMPORIO ARMANI</a>
-                    <a href="#">BALLY</a>
-                    <a href="#">ALEXANDER MCQUEEN</a>
-                </p>
             </li>
             <li>
                 <span>&#xe607;</span>
                 <a href="#">婴童</a>
                 <a href="#">母婴</a>
                 <b></b>
-                <ul>
-                    <li>
-                        <p><a href="#">男装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">POLO衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">衬衫</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">衬衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">裙装</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">鞋靴</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">女士鞋靴</a>
-                            <a href="#">男鞋</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">手提挎包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">钱夹</a>
-                            <a href="#">手拿包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">男包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">钱包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">手拿包</a>
-                            <a href="#">手提包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">配饰</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">围巾</a>
-                            <a href="#">帽子</a>
-                            <a href="#">腰带</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">童婴</a></p>
-                        <p>
-                            <a href="#">童装</a>
-                            <a href="#">童鞋</a>
-                            <a href="#">童装配饰</a>
-                        </p>
-                    </li>
-                </ul>
-                <p>
-                    <span>品牌</span>
-                    <a href="#">BURBERRY</a>
-                    <a href="#">FERRAGAMD</a>
-                    <a href="#">GUCCI</a>
-                    <a href="#">COACH</a>
-                    <a href="#">ARMANI</a>
-                    <a href="#">JEANS</a>
-                    <a href="#">DIESEL</a>
-                    <a href="#">VERSACE</a>
-                    <a href="#">MAC&CO</a>
-                    <a href="#">FRED PERTY</a>
-                    <a href="#">CELINE</a>
-                    <a href="#">SPORTMAX</a>
-                    <a href="#">MAX XARA</a>
-                    <a href="#">MICHAEL KORS</a>
-                    <a href="#">ZEGNA</a>
-                    <a href="#">FENDI</a>
-                    <a href="#">EMPORIO ARMANI</a>
-                    <a href="#">BALLY</a>
-                    <a href="#">ALEXANDER MCQUEEN</a>
-                </p>
             </li>
             <li>
                 <span>&#xe616;</span>
                 <a href="#">内衣</a>
                 <a href="#">舒适内衣</a>
                 <b></b>
-                <ul>
-                    <li>
-                        <p><a href="#">男装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">POLO衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">衬衫</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">衬衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">裙装</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">鞋靴</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">女士鞋靴</a>
-                            <a href="#">男鞋</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">手提挎包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">钱夹</a>
-                            <a href="#">手拿包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">男包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">钱包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">手拿包</a>
-                            <a href="#">手提包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">配饰</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">围巾</a>
-                            <a href="#">帽子</a>
-                            <a href="#">腰带</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">童婴</a></p>
-                        <p>
-                            <a href="#">童装</a>
-                            <a href="#">童鞋</a>
-                            <a href="#">童装配饰</a>
-                        </p>
-                    </li>
-                </ul>
-                <p>
-                    <span>品牌</span>
-                    <a href="#">BURBERRY</a>
-                    <a href="#">FERRAGAMD</a>
-                    <a href="#">GUCCI</a>
-                    <a href="#">COACH</a>
-                    <a href="#">ARMANI</a>
-                    <a href="#">JEANS</a>
-                    <a href="#">DIESEL</a>
-                    <a href="#">VERSACE</a>
-                    <a href="#">MAC&CO</a>
-                    <a href="#">FRED PERTY</a>
-                    <a href="#">CELINE</a>
-                    <a href="#">SPORTMAX</a>
-                    <a href="#">MAX XARA</a>
-                    <a href="#">MICHAEL KORS</a>
-                    <a href="#">ZEGNA</a>
-                    <a href="#">FENDI</a>
-                    <a href="#">EMPORIO ARMANI</a>
-                    <a href="#">BALLY</a>
-                    <a href="#">ALEXANDER MCQUEEN</a>
-                </p>
             </li>
-        </ul>
+        </script>
+        </ul>-->
+
+        <div id="partNav">
+            <ul .class="partNav">
+                <script id="nav" type="text/html">
+                    {{each navList as value}}
+                    <li>
+                        {{each value as item}}
+                        <a href="{{item.link}}">{{item.title}}</a>
+                        {{/each}}
+                        <b></b>
+                    </li>
+                    {{/each}}
+                </script>
+            </ul>
+            <div class="navCon">
+                <script id="navCon" type="text/html">
+
+                            <div class="detail">
+                                <ul>
+                                {{each subNavLists as value1}}
+                                    <li>
+                                        <p><a href="#">value1.subNavTit</a></p>
+                                        <p>
+                                            {{each value1.subNavList as value2}}
+                                                <a href="{{value2.link}}">{{value2.title}}</a>
+                                            {{/each}}
+                                        </p>
+                                    </li>
+                                {{/each}}
+                                </ul>
+                            </div>
+
+                </script>
+            </div>
+        </div>
+
         <p id="navList">
             <span></span>
             <span></span>
@@ -1040,9 +288,10 @@
             <span></span>
             <span></span>
         </p>
-        <img src="images/side.jpg"/>
+        <img class="banner-img" src="images/side.jpg"/>
     </div>
 </div>
+
 
 
 
@@ -1125,7 +374,7 @@
         </a>
         <div class="m-content" id="lux">
             <div>
-                <p id="lux-list">
+                <p class="lux-list">
                     <script id="lux-list-a" type="text/html">
                         {{each luxList as value}}
                             <a href="{{value.link}}">{{value.title}}</a>
@@ -1136,88 +385,433 @@
                     <span id="con-left-btn"></span>
                     <span id="con-right-btn"></span>
                     <div>
-                        <ul>
-                            <li><a href="#"><img src="images/con-img1.jpg"/></a></li>
-                            <li><a href="#"><img src="images/con-img2.jpg"/></a></li>
-                            <li><a href="#"><img src="images/con-img3.jpg"/></a></li>
-                            <li><a href="#"><img src="images/con-img4.jpg"/></a></li>
-                            <li><a href="#"><img src="images/con-img5.jpg"/></a></li>
-                            <li><a href="#"><img src="images/con-img6.jpg"/></a></li>
-                            <li><a href="#"><img src="images/con-img7.jpg"/></a></li>
-                            <li><a href="#"><img src="images/con-img8.jpg"/></a></li>
-                            <li><a href="#"><img src="images/con-img9.jpg"/></a></li>
-                            <li><a href="#"><img src="images/con-img10.jpg"/></a></li>
-                            <li><a href="#"><img src="images/con-img11.jpg"/></a></li>
-                            <li><a href="#"><img src="images/con-img12.jpg"/></a></li>
+                        <ul class="lux-pic">
+                            <script id="lux-pic-a" type="text/html">
+                                {{each luxPic as value1}}
+                                <li><a href="{{value1.link}}"><img src="{{value1.src}}"/></a></li>
+                                {{/each}}
+                            </script>
                         </ul>
                     </div>
                 </div>
             </div>
-
-            <div></div>
-            <div></div>
+            <div>
+                <a href="#"><img src="images/lux1.jpg"/></a>
+                <a href="#"><img src="images/lux2.jpg"/></a>
+                <div></div>
+                <span>&lt;</span>
+                <span>&gt;</span>
+            </div>
+            <div>
+                <a href="#"><img src="images/lux-1.jpg"/></a>
+                <a href="#"><img src="images/lux-2.jpg"/></a>
+                <a href="#"><img src="images/lux-3.jpg"/></a>
+                <a href="#"><img src="images/lux-4.jpg"/></a>
+            </div>
         </div>
 
     </div>
 
-    <div>
+    <div class="women">
         <a class="m-tit" href="#">
             <h6>潮流女装</h6>
             <span>THE TREND OF WOMEN'S</span>
         </a>
+        <div class="m-content" id="lux">
+            <div>
+                <p class="lux-list">
+                    <script id="lux-list-a" type="text/html">
+                        {{each luxList as value}}
+                        <a href="{{value.link}}">{{value.title}}</a>
+                        {{/each}}
+                    </script>
+                </p>
+                <div class="smooth">
+                    <span id="con-left-btn"></span>
+                    <span id="con-right-btn"></span>
+                    <div>
+                        <ul class="lux-pic">
+                            <script id="lux-pic-a" type="text/html">
+                                {{each luxPic as value1}}
+                                <li><a href="{{value1.link}}"><img src="{{value1.src}}"/></a></li>
+                                {{/each}}
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="images/women1.jpg"/></a>
+                <div></div>
+            </div>
+            <div>
+                <a href="#"><img src="images/women-1.jpg"/></a>
+                <a href="#"><img src="images/women-2.jpg"/></a>
+                <a href="#"><img src="images/women-3.jpg"/></a>
+                <a href="#"><img src="images/women-4.jpg"/></a>
+            </div>
+        </div>
     </div>
-    <div>
+
+    <div class="men">
         <a class="m-tit" href="#">
             <h6>精品男装</h6>
             <span>MEN'S BOUTIQUE</span>
         </a>
+        <div class="m-content" id="lux">
+            <div>
+                <p class="lux-list">
+                    <script id="lux-list-a" type="text/html">
+                        {{each luxList as value}}
+                        <a href="{{value.link}}">{{value.title}}</a>
+                        {{/each}}
+                    </script>
+                </p>
+                <div class="smooth">
+                    <span id="con-left-btn"></span>
+                    <span id="con-right-btn"></span>
+                    <div>
+                        <ul class="lux-pic">
+                            <script id="lux-pic-a" type="text/html">
+                                {{each luxPic as value1}}
+                                <li><a href="{{value1.link}}"><img src="{{value1.src}}"/></a></li>
+                                {{/each}}
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="images/men.jpg"/></a>
+                <div></div>
+            </div>
+            <div>
+                <a href="#"><img src="images/men-1.jpg"/></a>
+                <a href="#"><img src="images/men-2.jpg"/></a>
+                <a href="#"><img src="images/men-3.jpg"/></a>
+                <a href="#"><img src="images/men-4.jpg"/></a>
+            </div>
+        </div>
     </div>
-    <div>
+
+    <div class="shoe">
         <a class="m-tit" href="#">
             <h6>时尚鞋靴</h6>
             <span>FASHION FOOTWEAR</span>
         </a>
+        <div class="m-content" id="lux">
+            <div>
+                <p class="lux-list">
+                    <script id="lux-list-a" type="text/html">
+                        {{each luxList as value}}
+                        <a href="{{value.link}}">{{value.title}}</a>
+                        {{/each}}
+                    </script>
+                </p>
+                <div class="smooth">
+                    <span id="con-left-btn"></span>
+                    <span id="con-right-btn"></span>
+                    <div>
+                        <ul class="lux-pic">
+                            <script id="lux-pic-a" type="text/html">
+                                {{each luxPic as value1}}
+                                <li><a href="{{value1.link}}"><img src="{{value1.src}}"/></a></li>
+                                {{/each}}
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="images/shoe1.jpg"/></a>
+                <a href="#"><img src="images/shoe2.jpg"/></a>
+                <div></div>
+                <span>&lt;</span>
+                <span>&gt;</span>
+            </div>
+            <div>
+                <a href="#"><img src="images/shoe-1.jpg"/></a>
+                <a href="#"><img src="images/shoe-2.jpg"/></a>
+                <a href="#"><img src="images/shoe-3.jpg"/></a>
+                <a href="#"><img src="images/shoe-4.jpg"/></a>
+            </div>
+        </div>
     </div>
-    <div>
+
+    <div class="bag">
         <a class="m-tit" href="#">
             <h6>潮流箱包</h6>
             <span>FASHION BAGS</span>
         </a>
+        <div class="m-content" id="lux">
+            <div>
+                <p class="lux-list">
+                    <script id="lux-list-a" type="text/html">
+                        {{each luxList as value}}
+                        <a href="{{value.link}}">{{value.title}}</a>
+                        {{/each}}
+                    </script>
+                </p>
+                <div class="smooth">
+                    <span id="con-left-btn"></span>
+                    <span id="con-right-btn"></span>
+                    <div>
+                        <ul class="lux-pic">
+                            <script id="lux-pic-a" type="text/html">
+                                {{each luxPic as value1}}
+                                <li><a href="{{value1.link}}"><img src="{{value1.src}}"/></a></li>
+                                {{/each}}
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="images/bag.jpg"/></a>
+                <div></div>
+            </div>
+            <div>
+                <a href="#"><img src="images/bag-1.jpg"/></a>
+                <a href="#"><img src="images/bag-2.jpg"/></a>
+                <a href="#"><img src="images/bag-3.jpg"/></a>
+                <a href="#"><img src="images/bag-4.jpg"/></a>
+            </div>
+        </div>
     </div>
-    <div>
+
+    <div class="beauty">
         <a class="m-tit" href="#">
             <h6>美容护肤</h6>
             <span>BEAUTY MAKEUP</span>
         </a>
+        <div class="m-content" id="lux">
+            <div>
+                <p class="lux-list">
+                    <script id="lux-list-a" type="text/html">
+                        {{each luxList as value}}
+                        <a href="{{value.link}}">{{value.title}}</a>
+                        {{/each}}
+                    </script>
+                </p>
+                <div class="smooth">
+                    <span id="con-left-btn"></span>
+                    <span id="con-right-btn"></span>
+                    <div>
+                        <ul class="lux-pic">
+                            <script id="lux-pic-a" type="text/html">
+                                {{each luxPic as value1}}
+                                <li><a href="{{value1.link}}"><img src="{{value1.src}}"/></a></li>
+                                {{/each}}
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="images/beauty.jpg"/></a>
+                <div></div>
+            </div>
+            <div>
+                <a href="#"><img src="images/beauty-1.jpg"/></a>
+                <a href="#"><img src="images/beauty-2.jpg"/></a>
+                <a href="#"><img src="images/beauty-3.jpg"/></a>
+                <a href="#"><img src="images/beauty-4.jpg"/></a>
+            </div>
+        </div>
     </div>
-    <div>
+
+    <div class="sport">
         <a class="m-tit" href="#">
             <h6>运动户外</h6>
             <span>OUTDOOR EXERCISE</span>
         </a>
+        <div class="m-content" id="lux">
+            <div>
+                <p class="lux-list">
+                    <script id="lux-list-a" type="text/html">
+                        {{each luxList as value}}
+                        <a href="{{value.link}}">{{value.title}}</a>
+                        {{/each}}
+                    </script>
+                </p>
+                <div class="smooth">
+                    <span id="con-left-btn"></span>
+                    <span id="con-right-btn"></span>
+                    <div>
+                        <ul class="lux-pic">
+                            <script id="lux-pic-a" type="text/html">
+                                {{each luxPic as value1}}
+                                <li><a href="{{value1.link}}"><img src="{{value1.src}}"/></a></li>
+                                {{/each}}
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="images/sport1.jpg"/></a>
+                <a href="#"><img src="images/sport2.jpg"/></a>
+                <div></div>
+                <span>&lt;</span>
+                <span>&gt;</span>
+            </div>
+            <div>
+                <a href="#"><img src="images/sport-1.jpg"/></a>
+                <a href="#"><img src="images/sport-2.jpg"/></a>
+                <a href="#"><img src="images/sport-3.jpg"/></a>
+                <a href="#"><img src="images/sport-4.jpg"/></a>
+            </div>
+        </div>
     </div>
-    <div>
+
+    <div class="underwear">
         <a class="m-tit" href="#">
             <h6>内衣配饰</h6>
             <span>UNDERWEAR ACCESSORIES</span>
         </a>
+        <div class="m-content" id="lux">
+            <div>
+                <p class="lux-list">
+                    <script id="lux-list-a" type="text/html">
+                        {{each luxList as value}}
+                        <a href="{{value.link}}">{{value.title}}</a>
+                        {{/each}}
+                    </script>
+                </p>
+                <div class="smooth">
+                    <span id="con-left-btn"></span>
+                    <span id="con-right-btn"></span>
+                    <div>
+                        <ul class="lux-pic">
+                            <script id="lux-pic-a" type="text/html">
+                                {{each luxPic as value1}}
+                                <li><a href="{{value1.link}}"><img src="{{value1.src}}"/></a></li>
+                                {{/each}}
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="images/show.jpg"/></a>
+                <div></div>
+            </div>
+            <div>
+                <a href="#"><img src="images/show-1.jpg"/></a>
+                <a href="#"><img src="images/show-2.jpg"/></a>
+                <a href="#"><img src="images/show-3.jpg"/></a>
+                <a href="#"><img src="images/show-4.jpg"/></a>
+            </div>
+        </div>
     </div>
-    <div>
+
+    <div class="baby">
         <a class="m-tit" href="#">
             <h6>可爱婴童</h6>
             <span>SWEET KITS</span>
         </a>
+        <div class="m-content" id="lux">
+            <div>
+                <p class="lux-list">
+                    <script id="lux-list-a" type="text/html">
+                        {{each luxList as value}}
+                        <a href="{{value.link}}">{{value.title}}</a>
+                        {{/each}}
+                    </script>
+                </p>
+                <div class="smooth">
+                    <span id="con-left-btn"></span>
+                    <span id="con-right-btn"></span>
+                    <div>
+                        <ul class="lux-pic">
+                            <script id="lux-pic-a" type="text/html">
+                                {{each luxPic as value1}}
+                                <li><a href="{{value1.link}}"><img src="{{value1.src}}"/></a></li>
+                                {{/each}}
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="images/baby.jpg"/></a>
+                <div></div>
+            </div>
+            <div>
+                <a href="#"><img src="images/baby-1.jpg"/></a>
+                <a href="#"><img src="images/baby-2.jpg"/></a>
+                <a href="#"><img src="images/baby-3.jpg"/></a>
+                <a href="#"><img src="images/baby-4.jpg"/></a>
+            </div>
+        </div>
     </div>
-    <div>最下</div>
+
+    <div class="final">
+        <a href="#"><img src="images/final-1.jpg"/><div></div></a>
+        <a href="#"><img src="images/final-2.jpg"/><div></div></a>
+        <a href="#"><img src="images/final-3.jpg"/><div></div></a>
+    </div>
+
 </div>
 
 
 <!--bottom-->
-<div id="bottom"></div>
+<div id="bottom">
+    <div>
+        <p><b>&#xe683;</b>400-119-1111<span>8:00-24:00</span></p>
+        <p class="font-style"><b>&#xe63d;</b>service@yintai.com</p>
+    </div>
+    <div>
+        <div><b>&#xe866;</b></div>
+        <div>
+            <p><span>15天</span>无忧退换货</p>
+            <p>为您提供优质售后服务</p>
+        </div>
+    </div>
+    <div>
+        <div><b>&#xe628;</b></div>
+        <div>
+            <p><span>100%</span>正品保证</p>
+            <p>品质护航 质量无忧</p>
+        </div>
+    </div>
+    <div>
+        <div><b>&#xe61b;</b></div>
+        <div>
+            <p><span>满199元</span>免运费</p>
+            <p>为民提供便利物流</p>
+        </div>
+    </div>
+</div>
 
 
 <!--footer-->
-<footer></footer>
+<footer>
+    <p>
+        <a href="#">关于银泰</a>
+        <a href="#">帮助中心</a>
+        <a href="#">退换货政策</a>
+        <a href="#">网站地图</a>
+        <a href="#">代理合作</a>
+        <a href="#">品牌招商</a>
+        <a href="#">商务合作</a>
+        <a href="#">网站联盟</a>
+        <a href="#">联系我们</a>
+        <a href="#">加入银泰</a>
+        <a href="#">版权声明</a>
+        <a href="#">法律声明</a>
+    </p>
+    <p>
+        <a href="#">浙ICP备10200233号</a>
+        <a href="#">京公网安备110105019085</a>
+        <a href="#">增值电信业务经营许可证：浙B2-20110005</a>
+    </p>
+    <p>Copyright &copy; 2010-2017，浙江银泰电子商务有限公司</p>
+    <p>
+        <img src="images/xin.png"/>
+        <img src="images/xin2.gif"/>
+    </p>
+</footer>
 
 <script type="text/javascript" src="js/home/home.js"></script>
 <script src="js/home/template.js" type="text/javascript" charset="utf-8"></script>

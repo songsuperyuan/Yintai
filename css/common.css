@@ -90,7 +90,8 @@ body header {
   height: 139px;
   background: #fff url(../images/header.jpg) no-repeat center 1px;
   padding-top: 101px;
-  position: relative; }
+  position: relative;
+  border-bottom: 1px solid #2d2e2e; }
 
 body header > div {
   width: 1190px;
@@ -206,5 +207,46 @@ body header > div > nav {
 body header > div > .header-right {
   position: absolute;
   bottom: 0; }
+
+/*-------------footer--------------*/
+footer {
+  height: 200px;
+  background: #fff; }
+  footer p {
+    text-align: center;
+    line-height: 20px;
+    color: #b2b2b2; }
+    footer p a {
+      color: #b2b2b2;
+      margin: 0 5px; }
+
+footer p:nth-of-type(1) {
+  font-size: 14px;
+  line-height: 80px; }
+  footer p:nth-of-type(1) a {
+    color: #757575;
+    border-left: 1px solid #757575;
+    padding-left: 6px;
+    margin: 3px; }
+    footer p:nth-of-type(1) a:nth-of-type(1) {
+      border: 0; }
+    footer p:nth-of-type(1) a:hover {
+      color: #d90048; }
+
+footer p:nth-of-type(4) {
+  padding-left: 50px;
+  padding-top: 15px;
+  height: 50px;
+  width: 330px;
+  margin: 0 auto; }
+  footer p:nth-of-type(4) img {
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin: 5px 10px; }
+    footer p:nth-of-type(4) img:last-child {
+      width: 45px;
+      height: 49px;
+      margin-top: -2px; }
 
 /*# sourceMappingURL=common.css.map */

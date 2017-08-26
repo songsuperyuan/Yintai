@@ -45,6 +45,40 @@
       "title": "双肩包",
       "link": "#"
     }
+  ],
+  "luxPic": [
+    {
+      "src": "images/con-img1.jpg",
+      "link": "#"
+    },
+    {
+      "src": "images/con-img2.jpg",
+      "link": "#"
+    },
+    {
+      "src": "images/con-img3.jpg",
+      "link": "#"
+    },
+    {
+      "src": "images/con-img4.jpg",
+      "link": "#"
+    },
+    {
+      "src": "images/con-img5.jpg",
+      "link": "#"
+    },
+    {
+      "src": "images/con-img6.jpg",
+      "link": "#"
+    },
+    {
+      "src": "images/con-img7.jpg",
+      "link": "#"
+    },
+    {
+      "src": "images/con-img8.jpg",
+      "link": "#"
+    }
   ]
 }
 

@@ -1,0 +1,79 @@
+.goods-content-wrap {
+  background: #eeeeee;
+  width: 100%; }
+
+.goods-content {
+  margin: 0 auto;
+  width: 1190px;
+  height: 6000px;
+  height: auto !important;
+  min-height: 1000px;
+  background: #f4f4f4; }
+
+.link-list {
+  line-height: 46px;
+  padding-left: 20px; }
+  .link-list a {
+    color: #666666; }
+    .link-list a:hover {
+      color: #e5004f; }
+
+.good-info {
+  height: 543px;
+  background: #fff; }
+  .good-info div:nth-of-type(1) {
+    position: relative;
+    width: 450px;
+    height: 540px;
+    float: left; }
+    .good-info div:nth-of-type(1) #pic-middle {
+      width: 300px;
+      height: 400px;
+      border: 1px solid red;
+      margin: 20px 0 0 70px; }
+      .good-info div:nth-of-type(1) #pic-middle img {
+        position: absolute;
+        width: 300px;
+        height: 400px; }
+    .good-info div:nth-of-type(1) #pic-small {
+      clear: both;
+      float: left;
+      width: 300px;
+      height: 80px;
+      border: 1px solid red;
+      margin: 10px 0 10px 70px;
+      overflow: hidden; }
+      .good-info div:nth-of-type(1) #pic-small ul {
+        width: 380px; }
+        .good-info div:nth-of-type(1) #pic-small ul li {
+          float: left;
+          border: 1px solid #e1e1e1;
+          padding: 0 3px;
+          margin: 0 3px; }
+          .good-info div:nth-of-type(1) #pic-small ul li img {
+            float: left; }
+    .good-info div:nth-of-type(1) #pic-large {
+      position: absolute;
+      top: 20px;
+      left: 390px;
+      width: 400px;
+      height: 400px;
+      border: 1px solid red;
+      overflow: hidden; }
+
+.good-details {
+  height: 1000px;
+  height: auto !important;
+  min-height: 1000px;
+  background: #fdd;
+  margin-top: 10px; }
+  .good-details .details-main {
+    background: #fff;
+    float: left;
+    width: 990px; }
+  .good-details .details-aside {
+    background: #fff;
+    float: right;
+    width: 190px; }
+
+/*# sourceMappingURL=goods.css.map */
