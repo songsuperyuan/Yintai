@@ -21,13 +21,4 @@ $(function(){
         $('.slide-box-nav').children().eq(index).siblings().css({"z-index":0});
     })
 
-
-
-
-
-
-
-
-
-
 })

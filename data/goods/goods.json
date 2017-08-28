@@ -1,0 +1,41 @@
+{
+  "productAside": [
+    {
+      "asideTit":"人气推荐"
+    },
+    {
+      "asideList": [
+        {
+          "src": "../images/aside1.jpg",
+          "name": "洛可可2017秋装新款复古蓝白竖条纹拼接宽松喇叭袖衬",
+          "price1": "￥169",
+          "price2": "￥399"
+        },
+        {
+          "src": "../images/aside2.jpg",
+          "name": "洛可可2017春翻领印花宽松衬衣女五分袖潮百搭半袖衬",
+          "price1": "￥99",
+          "price2": "￥269"
+        },
+        {
+          "src": "../images/aside3.jpg",
+          "name": "洛可可2017秋装新款时尚个性系带领宽松休闲长袖雪纺",
+          "price1": "￥149",
+          "price2": "￥299"
+        },
+        {
+          "src": "../images/aside4.jpg",
+          "name": "洛可可新款百搭宽松短款白色衬衣女时尚字母印花长袖",
+          "price1": "￥69",
+          "price2": "￥299"
+        },
+        {
+          "src": "../images/aside5.jpg",
+          "name": "洛可可2017春装新款OL时尚蝴蝶结系带雪纺衬衫女长",
+          "price1": "￥79",
+          "price2": "￥199"
+        }
+      ]
+    }
+  ]
+}

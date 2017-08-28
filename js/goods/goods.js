@@ -1,44 +1,89 @@
 /**
  * Created by Administrator on 2017/8/26 0026.
  */
-function $(id){
-    return document.getElementById("id");
+function $(id) {
+    return document.getElementById(id);
 }
 let oLargeBox  = $("pic-large"),
     oMiddleBox = $("pic-middle"),
     oSmallBox = $("pic-small"),
-    aLargeImg = Array.from(oLargeBox.getElementsByTagName("img")),
-    aMiddleImg = Array.from(oMiddleBox.getElementsByTagName("img")),
-    aSmallImg = Array.from(oSmallBox.getElementsByTagName("img"));
+    oShadow = $("shadow"),
+    oBox = $("info-part1"),
+    oLargeImg = $("large-img"),
+    oGoods = $("good-info"),
+    aLargeList = Array.from(oLargeBox.getElementsByTagName("li")),
+    aMiddleList = Array.from(oMiddleBox.getElementsByTagName("li")),
+    aSmallList = Array.from(oSmallBox.getElementsByTagName("li"));
 
-aSmallImg.forEach(function(v,k){
-    v.ommouseenter = function(){
 
+// 选项卡效果
+aSmallList.forEach(function(v,k){
+    v.onmouseenter = function(){
+        aSmallList.forEach((n)=>n.className="");
+        this.className = "active-small";
+
+        aMiddleList.forEach((n)=>n.className="");
+        aMiddleList[k].className = "active-middle";
+
+        aLargeList.forEach((n)=>n.className="");
+        aLargeList[k].className = "active-large";
     }
-
-
-
-
 })
 
 
-/*aSmallImg.forEach(function (v, k) {
-    v.onmouseenter = function () {
-        // 修改小图片的样式
-        aSmallImg.forEach((n) => n.className = '');
-        this.className = 'active';
+// 放大镜效果
+let
+    iMaxL = oMiddleBox.offsetWidth - oShadow.offsetWidth,
+    iMaxT = oMiddleBox.offsetHeight - oShadow.offsetHeight,
+    iImgMaxL = 0,
+    iImgMaxT = 0;
 
-        // 修改中型图片的地址
-        var sOldSrc = oMiddleImg.src;
-        var sNewSrc = sOldSrc.slice(0, sOldSrc.lastIndexOf('-') + 1) + (k+1) + '.jpg';
+oMiddleBox.onmouseenter = function(){
+    oLargeBox.style.display = "block";
+    iImgMaxL = oLargeImg.offsetWidth - oLargeBox.offsetWidth;
+    iImgMaxT = oLargeImg.offsetHeight - oLargeBox.offsetHeight;
+}
+oMiddleBox.onmousemove = function(ev){
+    // 鼠标移动效果
+    let e = ev || window.event;
+    let iL = e.clientX - oBox.offsetLeft - oMiddleBox.offsetLeft - oShadow.offsetWidth/2,
+        iT = e.clientY - oBox.offsetTop - oMiddleBox.offsetTop - oShadow.offsetHeight/2;
+    if(iL < 0) {
+        iL = 0;
+    }
+    if(iT < 0) {
+        iT = 0;
+    }
+    if(iL >= iMaxL) {
+        iL = iMaxL;
+    }
+    if(iT >= iMaxT) {
+        iT = iMaxT;
+    }
+    oShadow.style.left = iL + "px";
+    oShadow.style.top  = iT + "px";
 
-        oMiddleImg.src = sNewSrc;
+    // large图片的移动
+    // iL / iMaxL = iImgL / iImgMaxL
+    let iImgL = iL * iImgMaxL / iMaxL,
+        iImgT = iT * iImgMaxT / iMaxT;
 
-        // 修改大型图片地址
-        var sOldSrc = oLargeImg.src;
-        var sNewSrc = sOldSrc.slice(0, sOldSrc.lastIndexOf('-') + 1) + (k+1) + '.jpg';
-        oLargeImg.src = sNewSrc;
-    };
-});*/
+    oLargeImg.style.left = iImgL + "px";
+    oLargeImg.style.top = iImgT + "px";
+}
+oMiddleBox.onmouseleave = function(){
+    oLargeBox.style.display = "none";
+    oShadow.style.left = "-1000px;"
+}
+
+
+$(function(){
+    $.get("../data/goods/goods.json",function(data){
+        var html = template("aside",data);
+        $(".details-aside").html(html);
+    })
+})
+
+
 
 

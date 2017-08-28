@@ -27,8 +27,6 @@ $(function(){
 
 
 
-
-
     $.get("data/home/nav-lux.json",function(data){
         var html = template("lux-list-a",data);
         $(".lux-list").html(html);
