@@ -81,6 +81,14 @@
     #login .login-enter a:nth-of-type(2) {
       float: right;
       color: #e5004f; }
+  #login .warn {
+    display: none;
+    position: absolute;
+    top: 280px;
+    left: 130px;
+    font-size: 16px;
+    color: red;
+    font-weight: bold; }
   #login .login-code {
     display: none;
     width: 100%;

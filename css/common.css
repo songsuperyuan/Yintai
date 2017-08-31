@@ -103,6 +103,10 @@ body header > div {
       width: 224px;
       border-right: 1px solid #efefef;
       float: left; }
+      body header > div div h1 a {
+        display: block;
+        width: 224px;
+        height: 78px; }
     body header > div div div:nth-of-type(1) {
       width: 120px;
       float: left; }

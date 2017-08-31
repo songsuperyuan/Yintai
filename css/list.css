@@ -4,51 +4,105 @@
 .list {
   width: 1190px;
   margin: 0 auto;
-  background: #fdd;
   height: 1000px;
   height: auto !important;
   min-height: 1000px; }
 
-.list div:nth-of-type(1) {
+.list .div1 {
   height: 30px;
   padding: 10px 20px;
   line-height: 30px; }
-  .list div:nth-of-type(1) p {
+  .list .div1 p {
     display: inline-block; }
-    .list div:nth-of-type(1) p:nth-of-type(1) {
+    .list .div1 p:nth-of-type(1) {
       width: 60px;
       text-align: center; }
-      .list div:nth-of-type(1) p:nth-of-type(1) span {
+      .list .div1 p:nth-of-type(1) span {
         display: inline-block;
         border-top: 5px solid #010101;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         margin: 0 5px; }
-      .list div:nth-of-type(1) p:nth-of-type(1):hover {
+      .list .div1 p:nth-of-type(1):hover {
         background: #5c5c5c;
         color: #fff; }
-        .list div:nth-of-type(1) p:nth-of-type(1):hover span {
+        .list .div1 p:nth-of-type(1):hover span {
           border-bottom: 5px solid #fff;
           border-left: 5px solid transparent;
           border-right: 5px solid transparent; }
-    .list div:nth-of-type(1) p:nth-of-type(2) span {
+    .list .div1 p:nth-of-type(2) span {
       color: #e5004f; }
-  .list div:nth-of-type(1) div {
+  .list .div1 div {
     display: none;
     width: 170px;
     height: 85px;
     background: #5c5c5c; }
-    .list div:nth-of-type(1) div a {
+    .list .div1 div a {
       color: #fff;
       float: left;
       margin: 0 4px; }
-      .list div:nth-of-type(1) div a:hover {
+      .list .div1 div a:hover {
         text-decoration: underline; }
 
-.list div:nth-of-type(2) {
+.list .div2 {
   height: 160px;
   background: #fff;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000; }
+  .list .div2 p {
+    padding: 5px 30px;
+    line-height: 28px;
+    border-bottom: 1px solid #e1e1e1; }
+    .list .div2 p span {
+      float: left;
+      width: 90px; }
+    .list .div2 p a {
+      float: left;
+      color: #666666; }
+      .list .div2 p a:hover {
+        color: #e5004f; }
+    .list .div2 p:nth-of-type(1) {
+      height: 28px; }
+      .list .div2 p:nth-of-type(1) a {
+        width: 100px; }
+    .list .div2 p:nth-of-type(2) {
+      height: 56px; }
+      .list .div2 p:nth-of-type(2) a {
+        width: 170px; }
+
+.list-nav {
+  height: 1000px;
+  height: auto !important;
+  min-height: 1000px;
+  background: #f4f4f4; }
+  .list-nav:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden; }
+  .list-nav .goods-part {
+    float: left;
+    margin: 10px 8px 10px 0;
+    width: 230px;
+    height: 360px;
+    background: #fff; }
+    .list-nav .goods-part img {
+      display: block;
+      width: 100%; }
+    .list-nav .goods-part p {
+      padding: 0 20px; }
+      .list-nav .goods-part p:nth-of-type(1) {
+        height: 24px;
+        font-size: 14px;
+        color: #e5004f;
+        font-weight: bold; }
+      .list-nav .goods-part p:nth-of-type(2) {
+        font-size: 14px; }
+        .list-nav .goods-part p:nth-of-type(2) a {
+          color: #666; }
+          .list-nav .goods-part p:nth-of-type(2) a:hover {
+            color: #e5004f; }
 
 /*# sourceMappingURL=list.css.map */

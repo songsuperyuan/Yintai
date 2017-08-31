@@ -28,4 +28,20 @@ $(function(){
         }
     })
 
+    $("#login-btn").on("click",function(){
+        var sCookie = getCookie('user');
+        var aCookie = sCookie ? JSON.parse(sCookie) : [];
+        for(var i = 0; i < aCookie.length; i++) {
+            console.log(aCookie[i]);
+            if( (($("#passport").val() == aCookie[i].id) && ($("#passportPass").val() == aCookie[i].password)) || (($("#cell").val() == aCookie[i].id) &&  ($("#cellPass").val() == aCookie[i].password)) ){
+                window.location.href="../index.html?id="+$("#passport").val();
+            }else{
+                $(".warn").show();
+            }
+        }
+    })
+
 })
+
+
+

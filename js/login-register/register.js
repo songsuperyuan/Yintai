@@ -34,7 +34,31 @@ $(function(){
                 $("#popbox").show();
             }else{
                 if(oPassword === oSure){
-                    window.location.href="../index.html";
+
+                    var sCookie = getCookie('user');
+                    if(sCookie === undefined) {
+                        var aUser = [];
+                    } else {
+                        var aUser = JSON.parse(sCookie);
+                    }
+                    var bBtn = true; // 假设cookie里面没有该用户名
+                    for(var i = 0; i < aUser.length; i++) {
+                        if(aUser[i].id == $("#reg-number").val()) {
+                            bBtn = false;
+                            oPopCon.html("该手机号已被占用");
+                            $("#popbox").show();
+                        }
+                    }
+                    if(bBtn) {
+                        var oUser = {
+                            id: $("#reg-number").val(),
+                            password: oPassword
+                        };
+                        aUser.push(oUser);
+                        setCookie('user', JSON.stringify(aUser), 7, '/');
+                        window.location.href="../index.html?id="+$("#reg-number").val();
+                    }
+
                 }else{
                     oPopCon.html("两次输入的密码不一致");
                     $("#popbox").show();

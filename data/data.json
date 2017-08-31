@@ -1,0 +1,186 @@
+{
+  "goods":[
+    {
+      "pid10001": {
+        "id": "10001",
+        "title": "QIGITL 女打底衫1",
+        "price": "108",
+        "imgUrl": "../images/pic1.jpg"
+      },
+      "pid10002": {
+        "id": "10002",
+        "title": "QIGITL 女打底衫2",
+        "price": "120",
+        "imgUrl": "../images/pic2.jpg"
+      },
+      "pid10003": {
+        "id": "10003",
+        "title": "QIGITL 女打底衫3",
+        "price": "333",
+        "imgUrl": "../images/pic3.jpg"
+      },
+      "pid10004": {
+        "id": "10004",
+        "title": "QIGITL 女打底衫4",
+        "price": "255",
+        "imgUrl": "../images/pic4.jpg"
+      },
+      "pid10005": {
+        "id": "10005",
+        "title": "QIGITL 女打底衫5",
+        "price": "89",
+        "imgUrl": "../images/pic5.jpg"
+      },
+      "pid10006": {
+        "id": "10006",
+        "title": "QIGITL 女打底衫6",
+        "price": "108",
+        "imgUrl": "../images/pic6.jpg"
+      },
+      "pid10007": {
+        "id": "10007",
+        "title": "QIGITL 女打底衫7",
+        "price": "120",
+        "imgUrl": "../images/pic7.jpg"
+      },
+      "pid10008": {
+        "id": "10008",
+        "title": "QIGITL 女打底衫8",
+        "price": "333",
+        "imgUrl": "../images/pic8.jpg"
+      },
+      "pid10009": {
+        "id": "10009",
+        "title": "QIGITL 女打底衫9",
+        "price": "255",
+        "imgUrl": "../images/pic9.jpg"
+      },
+      "pid10010": {
+        "id": "10010",
+        "title": "QIGITL 女打底衫10",
+        "price": "89",
+        "imgUrl": "../images/pic10.jpg"
+      },
+      "pid10011": {
+        "id": "10011",
+        "title": "QIGITL 女打底衫11",
+        "price": "108",
+        "imgUrl": "../images/pic11.jpg"
+      },
+      "pid10012": {
+        "id": "10012",
+        "title": "QIGITL 女打底衫12",
+        "price": "120",
+        "imgUrl": "../images/pic12.jpg"
+      },
+      "pid10013": {
+        "id": "10013",
+        "title": "QIGITL 女打底衫13",
+        "price": "333",
+        "imgUrl": "../images/pic13.jpg"
+      },
+      "pid10014": {
+        "id": "10014",
+        "title": "QIGITL 女打底衫14",
+        "price": "255",
+        "imgUrl": "../images/pic14.jpg"
+      },
+      "pid10015": {
+        "id": "10015",
+        "title": "QIGITL 女打底衫15",
+        "price": "89",
+        "imgUrl": "../images/pic15.jpg"
+      },
+      "pid10016": {
+        "id": "10016",
+        "title": "QIGITL 女打底衫16",
+        "price": "108",
+        "imgUrl": "../images/pic1.jpg"
+      },
+      "pid10017": {
+        "id": "10017",
+        "title": "QIGITL 女打底衫17",
+        "price": "120",
+        "imgUrl": "../images/pic2.jpg"
+      },
+      "pid10018": {
+        "id": "10018",
+        "title": "QIGITL 女打底衫18",
+        "price": "333",
+        "imgUrl": "../images/pic3.jpg"
+      },
+      "pid10019": {
+        "id": "10019",
+        "title": "QIGITL 女打底衫19",
+        "price": "255",
+        "imgUrl": "../images/pic4.jpg"
+      },
+      "pid10020": {
+        "id": "10020",
+        "title": "QIGITL 女打底衫20",
+        "price": "89",
+        "imgUrl": "../images/pic5.jpg"
+      },
+      "pid10021": {
+        "id": "10021",
+        "title": "QIGITL 女打底衫21",
+        "price": "108",
+        "imgUrl": "../images/pic6.jpg"
+      },
+      "pid10022": {
+        "id": "10022",
+        "title": "QIGITL 女打底衫22",
+        "price": "120",
+        "imgUrl": "../images/pic7.jpg"
+      },
+      "pid10023": {
+        "id": "100023",
+        "title": "QIGITL 女打底衫23",
+        "price": "333",
+        "imgUrl": "../images/pic8.jpg"
+      },
+      "pid10024": {
+        "id": "10024",
+        "title": "QIGITL 女打底衫24",
+        "price": "255",
+        "imgUrl": "../images/pic9.jpg"
+      },
+      "pid10025": {
+        "id": "10025",
+        "title": "QIGITL 女打底衫25",
+        "price": "89",
+        "imgUrl": "../images/pic10.jpg"
+      },
+      "pid10026": {
+        "id": "10026",
+        "title": "QIGITL 女打底衫26",
+        "price": "108",
+        "imgUrl": "../images/pic11.jpg"
+      },
+      "pid10027": {
+        "id": "10027",
+        "title": "QIGITL 女打底衫27",
+        "price": "120",
+        "imgUrl": "../images/pic12.jpg"
+      },
+      "pid10028": {
+        "id": "10028",
+        "title": "QIGITL 女打底衫28",
+        "price": "333",
+        "imgUrl": "../images/pic13.jpg"
+      },
+      "pid10029": {
+        "id": "10029",
+        "title": "QIGITL 女打底衫29",
+        "price": "255",
+        "imgUrl": "../images/pic14.jpg"
+      },
+      "pid10030": {
+        "id": "10030",
+        "title": "QIGITL 女打底衫30",
+        "price": "89",
+        "imgUrl": "../images/pic15.jpg"
+      }
+    }
+  ]
+}

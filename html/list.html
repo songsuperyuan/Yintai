@@ -6,6 +6,8 @@
     <link href="../css/common.css" rel="stylesheet" type="text/css"/>
     <link href="../css/list.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/cart.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <!--top-->
@@ -17,9 +19,9 @@
             <a href="#"><span>&#xe61a;</span>手机银泰<b></b></a>
         </p>
         <p>
-            <span>Hi,<a href="#">欢迎来到银泰网!</a></span>
-            <a href="#">登录</a>
-            <a href="#">注册</a>
+            <span>Hi,<a href="../index.html">欢迎来到银泰网!</a></span>
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>>
             <a href="#">我的订单</a>
             <a href="#">我的银泰<b></b></a>
             <a href="#">银泰卡</a>
@@ -78,7 +80,7 @@
 <!--list-->
 <div class="list-wrap">
     <div class="list">
-        <div>
+        <div class="div1">
             <p>女装<span></span></p>
             <p>（商品<span>277</span>款、品牌<span>8</span>个）</p>
             <div>
@@ -95,10 +97,41 @@
                 <a href="#">男装</a>
             </div>
         </div>
-        <div>
-
+        <div class="div2">
+            <p>
+                <span>分类：</span>
+                <a href="#">上装(2866)</a>
+                <a href="#">裙装(2696)</a>
+                <a href="#">下装(445)</a>
+            </p>
+            <p>
+                <span>品牌：</span>
+                <a href="#">LOFTSHINE(506)</a>
+                <a href="#">Miss Lisa(445)</a>
+                <a href="#">艾丽范宁(406)</a>
+                <a href="#">兰奥(367)</a>
+                <a href="#">奈密儿(314)</a>
+                <a href="#">vanillachocolate(313)</a>
+                <a href="#">茵佳兰迪(275)</a>
+                <a href="#">axelledesoie(260)</a>
+            </p>
         </div>
 
+        <div class="list-nav">
+
+            <script id="goods" type="text/html">
+                {{each goods as value}}
+                    {{each value as value1 i}}
+                    <div class="goods-part">
+                        <img src="{{value1.imgUrl}}"/>
+                        <p>￥{{value1.price}}</p>
+                        <p><a href="goods.html?id={{i}}">{{value1.title}}</a></p>
+                    </div>
+                    {{/each}}
+                {{/each}}
+            </script>
+
+        </div>
     </div>
 </div>
 

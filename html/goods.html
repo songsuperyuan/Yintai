@@ -6,6 +6,8 @@
     <link href="../css/common.css" rel="stylesheet" type="text/css"/>
     <link href="../css/goods.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/cart.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <!--top-->
@@ -17,9 +19,9 @@
             <a href="#"><span>&#xe61a;</span>手机银泰<b></b></a>
         </p>
         <p>
-            <span>Hi,<a href="#">欢迎来到银泰网!</a></span>
-            <a href="#">登录</a>
-            <a href="#">注册</a>
+            <span>Hi,<a href="../index.html">欢迎来到银泰网!</a></span>
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
             <a href="#">我的订单</a>
             <a href="#">我的银泰<b></b></a>
             <a href="#">银泰卡</a>
@@ -62,7 +64,7 @@
             <a id='cartcar' href="#"><span>&#xe618;</span>购物袋<b>0</b>件<i></i></a>
         </div>
         <nav>
-            <a href="#">全部分类</a>
+            <a href="list.html">全部分类</a>
             <a href="#">名品馆</a>
             <a href="#">特卖</a>
             <a href="#">海淘馆</a>
@@ -92,11 +94,10 @@
             <div id="info-part1">
                 <div id="pic-middle">
                     <ul>
-                        <li><img src="../images/middle1.jpg"></li>
+                        <li class="middle active-middle"></li>
                         <li><img src="../images/middle2.jpg"></li>
                         <li><img src="../images/middle3.jpg"></li>
                         <li><img src="../images/middle4.jpg"></li>
-                        <li><img src="../images/middle5.jpg"></li>
                     </ul>
                     <div id="shadow"></div>
                 </div>
@@ -108,27 +109,27 @@
                 </div>
                 <div id="pic-small">
                     <ul>
-                        <li><img src="../images/small1.jpg"></li>
+                        <li class="small"></li>
                         <li><img src="../images/small2.jpg"></li>
                         <li><img src="../images/small3.jpg"></li>
                         <li><img src="../images/small4.jpg"></li>
-                        <li><img src="../images/small5.jpg"></li>
                     </ul>
                 </div>
                 <div id="pic-large">
                     <ul id="large-img">
-                        <li><img src="../images/large1.jpg"></li>
+                        <li class="large active-large"></li>
                         <li><img src="../images/large2.jpg"></li>
                         <li><img src="../images/large3.jpg"></li>
                         <li><img src="../images/large4.jpg"></li>
-                        <li><img src="../images/large5.jpg"></li>
                     </ul>
                 </div>
             </div>
             <div id="con-info">
-                <h6>3洛可可2017秋装新款时尚潮流印花长袖衬衫女休闲直筒单排扣衬衣462SC171</h6>
-                <p>银泰价：<span class="yt-price">￥169.00</span></p>
-                <p>参考价：<span class="refer-price">￥399.00</span></p>
+
+                <div class="goods-data">
+
+                </div>
+
                 <div class="activity"><p>满减</p>秋季上新，满299减100，可累计</div>
                 <p class="color">选择颜色:
                     <a href="#">花色</a>
@@ -139,9 +140,9 @@
                     <a href="#">L</a>
                 </p>
                 <div class="choose">
-                    <p class="number">1<b><span></span><span></span></b></p>
+                    <div class="number"><input id="num" type="text" value="1"/></div>
                     <a class="now" href="#">立即购买</a>
-                    <a class="cart" href="#"><span>&#xe618;</span>加入购物车</a>
+                    <a class="cart" id="btn" href="cart.html"></a>
                 </div>
                 <p class="promise">服务承诺：<span>正品保障</span><span>支持无理由退换货</span></p>
             </div>

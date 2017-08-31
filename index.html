@@ -17,9 +17,9 @@
             <a href="#"><span>&#xe61a;</span>手机银泰<b></b></a>
         </p>
         <p>
-            <span>Hi,<a href="#">欢迎来到银泰网!</a></span>
-            <a href="#">登录</a>
-            <a href="#">注册</a>
+            <span>Hi,<a href="#" id="username">欢迎来到银泰网!</a></span>
+            <a href="html/login.html">登录</a>
+            <a href="html/register.html">注册</a>
             <a href="#">我的订单</a>
             <a href="#">我的银泰<b></b></a>
             <a href="#">银泰卡</a>
@@ -63,7 +63,7 @@
             <a id='cartcar' href="#"><span>&#xe618;</span>购物袋<b>0</b>件<i></i></a>
         </div>
         <nav>
-            <a href="#">全部分类</a>
+            <a href="html/list.html">全部分类</a>
             <a href="#">名品馆</a>
             <a href="#">特卖</a>
             <a href="#">海淘馆</a>
@@ -80,174 +80,37 @@
 <!--banner-->
 <div class="banner-wrap">
     <div id="banner">
-        <!--<ul>
-        <script id="nav-first" type="text/html">
-            <li>
-                <span>&#xe600;</span>
-                <a href="#">名品</a>
-                <a href="#">秋冬新品</a>
-                <b></b>
-                <ul class="nav-first navSlide">
-                        {{each firstNav as first1}}
-                        	<li>
-                        		<p><a href="#">first1.subNavTit</a></p>
-                        		<p>
-	                        		{{each first1.subNavList as first2}}
-	                        			<a href="{{first2.link}}">{{first2.title}}</a>
-	                        		{{/each}}
-                        		</p>
-                        	</li>
-						{{/each}}
-                </ul>
-                &lt;!&ndash;<ul>
-                    <li>
-                        <p><a href="#">男装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">POLO衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">衬衫</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女装</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">T恤</a>
-                            <a href="#">衬衫</a>
-                            <a href="#">裤装</a>
-                            <a href="#">裙装</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">鞋靴</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">女士鞋靴</a>
-                            <a href="#">男鞋</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">女包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">手提挎包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">钱夹</a>
-                            <a href="#">手拿包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">男包</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">钱包</a>
-                            <a href="#">单肩包</a>
-                            <a href="#">手拿包</a>
-                            <a href="#">手提包</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">配饰</a></p>
-                        <p>
-                            <a href="#">新品</a>
-                            <a href="#">围巾</a>
-                            <a href="#">帽子</a>
-                            <a href="#">腰带</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><a href="#">童婴</a></p>
-                        <p>
-                            <a href="#">童装</a>
-                            <a href="#">童鞋</a>
-                            <a href="#">童装配饰</a>
-                        </p>
-                    </li>
-                </ul>&ndash;&gt;
-                &lt;!&ndash;<p>
-                    <span>品牌</span>
-                    <a href="#">BURBERRY</a>
-                    <a href="#">FERRAGAMD</a>
-                    <a href="#">GUCCI</a>
-                    <a href="#">COACH</a>
-                    <a href="#">ARMANI</a>
-                    <a href="#">JEANS</a>
-                    <a href="#">DIESEL</a>
-                    <a href="#">VERSACE</a>
-                    <a href="#">MAC&CO</a>
-                    <a href="#">FRED PERTY</a>
-                    <a href="#">CELINE</a>
-                    <a href="#">SPORTMAX</a>
-                    <a href="#">MAX XARA</a>
-                    <a href="#">MICHAEL KORS</a>
-                    <a href="#">ZEGNA</a>
-                    <a href="#">FENDI</a>
-                    <a href="#">EMPORIO ARMANI</a>
-                    <a href="#">BALLY</a>
-                    <a href="#">ALEXANDER MCQUEEN</a>
-                </p>&ndash;&gt;
-            </li>
-            <li>
-                <span>&#xe63c;</span>
-                <a href="#">女装</a>
-                <a href="#">秋装上新</a>
-                <b></b>
-            </li>
-            <li>
-                <span>&#xe646;</span>
-                <a href="#">男装</a>
-                <a href="#">型男专场</a>
-                <b></b>
-            </li>
-            <li>
-                <span>&#xe658;</span>
-                <a href="#">鞋靴</a>
-                <a href="#">时尚鞋品</a>
-                <b></b>
-            </li>
-            <li>
-                <span>&#xe917;</span>
-                <a href="#">美妆</a>
-                <a href="#">隔离防晒</a>
-                <b></b>
-            </li>
-            <li>
-                <span>&#xe617;</span>
-                <a href="#">箱包</a>
-                <a href="#">女神单肩</a>
-                <b></b>
-            </li>
-            <li>
-                <span>&#xe612;</span>
-                <a href="#">运动</a>
-                <a href="#">运动鞋服</a>
-                <b></b>
-            </li>
-            <li>
-                <span>&#xe608;</span>
-                <a href="#">配饰</a>
-                <a href="#">黄金饰品</a>
-                <b></b>
-            </li>
-            <li>
-                <span>&#xe607;</span>
-                <a href="#">婴童</a>
-                <a href="#">母婴</a>
-                <b></b>
-            </li>
-            <li>
-                <span>&#xe616;</span>
-                <a href="#">内衣</a>
-                <a href="#">舒适内衣</a>
-                <b></b>
-            </li>
-        </script>
-        </ul>-->
+        <ul id="pic-bg">
+            <li><img src="images/blue-bg.jpg"></li>
+            <li><img src="images/green-bg.jpg"></li>
+            <li><img src="images/light-bg.jpg"></li>
+            <li><img src="images/pink-bg.jpg"></li>
+            <li><img src="images/dark-bg.jpg"></li>
+        </ul>
+        <div id="slider">
+            <ul id="pic">
+                <li><a href="#"><img src="images/blue-img.jpg"></a></li>
+                <li><a href="#"><img src="images/green-img.jpg"></a></li>
+                <li><a href="#"><img src="images/light-img.jpg"></a></li>
+                <li><a href="#"><img src="images/pink-img.jpg"></a></li>
+                <li><a href="#"><img src="images/dark-img.jpg"></a></li>
+            </ul>
+            <ul id="navList">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div id='btn'>
+                <span>&lt;</span>
+                <span>&gt;</span>
+            </div>
+        </div>
+
 
         <div id="partNav">
-            <ul .class="partNav">
+            <ul class="partAside">
                 <script id="nav" type="text/html">
                     {{each navList as value}}
                     <li>
@@ -259,40 +122,30 @@
                     {{/each}}
                 </script>
             </ul>
-            <div class="navCon">
+
+            <div class="navConBox">
                 <script id="navCon" type="text/html">
-
-                            <div class="detail">
-                                <ul>
-                                {{each subNavLists as value1}}
-                                    <li>
-                                        <p><a href="#">value1.subNavTit</a></p>
-                                        <p>
-                                            {{each value1.subNavList as value2}}
-                                                <a href="{{value2.link}}">{{value2.title}}</a>
-                                            {{/each}}
-                                        </p>
-                                    </li>
+                        {{each lists as value1}}
+                        <ul class="navAside">
+                            {{each value1.subNavLists as value2}}
+                            <li>
+                            <h6><a href="#">{{value2.subNavTit}}</a></h6>
+                            <p>
+                                {{each value2.subNavList as value3}}
+                                <a href="{{value3.link}}">{{value3.title}}</a>
                                 {{/each}}
-                                </ul>
-                            </div>
-
+                            </p>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        {{/each}}
                 </script>
             </div>
         </div>
 
-        <p id="navList">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </p>
         <img class="banner-img" src="images/side.jpg"/>
     </div>
 </div>
-
-
 
 
 <!--main-->
@@ -367,7 +220,7 @@
     </div>
     <a href="#"><img src="images/jade.jpg"/></a>
 
-    <div class="luxury">
+    <div class="luxury tier">
         <a class="m-tit" href="#">
             <h6>时尚名品</h6>
             <span>LUXURY GOODS</span>
@@ -382,8 +235,8 @@
                     </script>
                 </p>
                 <div class="smooth">
-                    <span id="con-left-btn"></span>
-                    <span id="con-right-btn"></span>
+                    <span class="con-left-btn"></span>
+                    <span class="con-right-btn"></span>
                     <div>
                         <ul class="lux-pic">
                             <script id="lux-pic-a" type="text/html">
@@ -412,12 +265,12 @@
 
     </div>
 
-    <div class="women">
+    <div class="women tier">
         <a class="m-tit" href="#">
             <h6>潮流女装</h6>
             <span>THE TREND OF WOMEN'S</span>
         </a>
-        <div class="m-content" id="lux">
+        <div class="m-content">
             <div>
                 <p class="lux-list">
                     <script id="lux-list-a" type="text/html">
@@ -453,12 +306,12 @@
         </div>
     </div>
 
-    <div class="men">
+    <div class="men tier">
         <a class="m-tit" href="#">
             <h6>精品男装</h6>
             <span>MEN'S BOUTIQUE</span>
         </a>
-        <div class="m-content" id="lux">
+        <div class="m-content">
             <div>
                 <p class="lux-list">
                     <script id="lux-list-a" type="text/html">
@@ -494,12 +347,12 @@
         </div>
     </div>
 
-    <div class="shoe">
+    <div class="shoe tier">
         <a class="m-tit" href="#">
             <h6>时尚鞋靴</h6>
             <span>FASHION FOOTWEAR</span>
         </a>
-        <div class="m-content" id="lux">
+        <div class="m-content">
             <div>
                 <p class="lux-list">
                     <script id="lux-list-a" type="text/html">
@@ -509,8 +362,8 @@
                     </script>
                 </p>
                 <div class="smooth">
-                    <span id="con-left-btn"></span>
-                    <span id="con-right-btn"></span>
+                    <span class="con-left-btn"></span>
+                    <span class="con-right-btn"></span>
                     <div>
                         <ul class="lux-pic">
                             <script id="lux-pic-a" type="text/html">
@@ -538,12 +391,12 @@
         </div>
     </div>
 
-    <div class="bag">
+    <div class="bag tier">
         <a class="m-tit" href="#">
             <h6>潮流箱包</h6>
             <span>FASHION BAGS</span>
         </a>
-        <div class="m-content" id="lux">
+        <div class="m-content">
             <div>
                 <p class="lux-list">
                     <script id="lux-list-a" type="text/html">
@@ -579,12 +432,12 @@
         </div>
     </div>
 
-    <div class="beauty">
+    <div class="beauty tier">
         <a class="m-tit" href="#">
             <h6>美容护肤</h6>
             <span>BEAUTY MAKEUP</span>
         </a>
-        <div class="m-content" id="lux">
+        <div class="m-content">
             <div>
                 <p class="lux-list">
                     <script id="lux-list-a" type="text/html">
@@ -594,8 +447,8 @@
                     </script>
                 </p>
                 <div class="smooth">
-                    <span id="con-left-btn"></span>
-                    <span id="con-right-btn"></span>
+                    <span class="con-left-btn"></span>
+                    <span class="con-right-btn"></span>
                     <div>
                         <ul class="lux-pic">
                             <script id="lux-pic-a" type="text/html">
@@ -620,12 +473,12 @@
         </div>
     </div>
 
-    <div class="sport">
+    <div class="sport tier">
         <a class="m-tit" href="#">
             <h6>运动户外</h6>
             <span>OUTDOOR EXERCISE</span>
         </a>
-        <div class="m-content" id="lux">
+        <div class="m-content">
             <div>
                 <p class="lux-list">
                     <script id="lux-list-a" type="text/html">
@@ -664,12 +517,12 @@
         </div>
     </div>
 
-    <div class="underwear">
+    <div class="underwear tier">
         <a class="m-tit" href="#">
             <h6>内衣配饰</h6>
             <span>UNDERWEAR ACCESSORIES</span>
         </a>
-        <div class="m-content" id="lux">
+        <div class="m-content">
             <div>
                 <p class="lux-list">
                     <script id="lux-list-a" type="text/html">
@@ -705,12 +558,12 @@
         </div>
     </div>
 
-    <div class="baby">
+    <div class="baby tier">
         <a class="m-tit" href="#">
             <h6>可爱婴童</h6>
             <span>SWEET KITS</span>
         </a>
-        <div class="m-content" id="lux">
+        <div class="m-content">
             <div>
                 <p class="lux-list">
                     <script id="lux-list-a" type="text/html">
@@ -752,7 +605,24 @@
         <a href="#"><img src="images/final-3.jpg"/><div></div></a>
     </div>
 
+
+    <div id="fixedNav">
+        <ul>
+            <li>&#xe600;<span>时尚名品</span> </li>
+            <li>&#xe63c;<span>潮流女装</span> </li>
+            <li>&#xe646;<span>精品男装</span> </li>
+            <li>&#xe658;<span>时尚鞋靴</span> </li>
+            <li>&#xe617;<span>潮流箱包</span> </li>
+            <li>&#xe917;<span>美容护肤</span> </li>
+            <li>&#xe612;<span>户外运动</span> </li>
+            <li>&#xe608;<span>内衣配饰</span> </li>
+            <li>&#xe607;<span>可爱婴童</span> </li>
+            <li>TOP<span>返回顶部</span> </li>
+        </ul>
+    </div>
 </div>
+
+
 
 
 <!--bottom-->
@@ -812,6 +682,9 @@
         <img src="images/xin2.gif"/>
     </p>
 </footer>
+
+
+
 
 <script type="text/javascript" src="js/home/home.js"></script>
 <script src="js/template.js" type="text/javascript" charset="utf-8"></script>

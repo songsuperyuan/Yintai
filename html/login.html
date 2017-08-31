@@ -13,7 +13,7 @@
 <div id="login-top">
     <div class="logo">
         <h1>
-            <a href="#"><img src="../images/logo.jpg"/></a>
+            <a href="../index.html"><img src="../images/logo.jpg"/></a>
         </h1>
         <span>欢迎登录</span>
     </div>
@@ -55,19 +55,20 @@
             <div class="login-input">
                 <div class="input-text-box">
                     <span class="input-icon">&#xe659;</span>
-                    <input class="input-text passport-text" type="text" placeholder="请输入银泰护照号(手机号)" />
-                    <input class="input-text account-text" type="text" placeholder="请输入手机/邮箱" />
+                    <input class="input-text passport-text" id="passport" type="text" placeholder="请输入银泰护照号(手机号)" />
+                    <input class="input-text account-text" id="cell" type="text" placeholder="请输入手机/邮箱" />
                 </div>
                 <div class="input-password-box">
                     <span class="input-icon">&#xe630;</span>
-                    <input class="input-password passport-password" type="password" placeholder="请输入密码" />
-                    <input class="input-password account-password" type="password" placeholder="请输入密码" />
+                    <input class="input-password passport-password" id="passportPass" type="password" placeholder="请输入密码(护照密码)" />
+                    <input class="input-password account-password" id="cellPass" type="password" placeholder="请输入密码" />
                 </div>
                 <a id="login-btn" href="#">登录</a>
                 <p class="login-enter">
                     <a href="#">忘记密码？</a>
-                    <a href="#">注册</a>
+                    <a href="register.html">注册</a>
                 </p>
+                <p class="warn">账户或密码错误!</p>
             </div>
             <div class="login-code">
                 <p>用银泰网APP 扫描二维码安全登录</p>
@@ -123,6 +124,7 @@
 </footer>
 
 
+<script src="../js/login-register/common.js"></script>
 <script src="../js/login-register/login.js"></script>
 </body>
 </html>

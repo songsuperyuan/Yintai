@@ -3,30 +3,32 @@
  */
 $(function(){
 
+    // 导航部分
     $.get("data/home/nav-list.json",function(data){
         var html = template("nav",data);
-        $("#partNav ul").html(html);
+        $("#partNav .partAside").html(html);
     })
 
-    $("#partNav ul").on("mouseenter","li",function(){
-        $(".navCon").show();
+
+    $("#partNav .partAside").on("mouseenter","li",function(){
+        $(".navConBox").show();
         var index = $(this).index();
-        $.get("data/home/nav_slide.json",function(data){
-            var html = template("navCon",data[index]);
-            $("#partNav .navCon").html(html);
+        $.get("data/home/nav-slide.json",function(data){
+            var html = template("navCon",data);
+            $("#partNav .navConBox").html(html);
         })
+
+        $(".navConBox .navAside").eq(index).css("display","block").siblings().css("display","none");
     })
+
 
     $("#partNav").on("mouseleave",function(){
-        $(".navCon").hide();
+        $(".navConBox").hide();
     })
 
 
 
-
-
-
-
+    // 时尚名品
     $.get("data/home/nav-lux.json",function(data){
         var html = template("lux-list-a",data);
         $(".lux-list").html(html);
